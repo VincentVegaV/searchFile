@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f2ef1ff-b4e0-4f24-ab13-90b7535f5f5d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../searchFile/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../searchFile/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../searchFile/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../searchFile/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../searchFile/searchFile.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../searchFile/src/com/task1/fileSearch/Runner.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,7 +13,24 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="Runner.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../searchFile/src/com/task1/fileSearch/Runner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -31,7 +44,9 @@
     <option name="width" value="960" />
     <option name="height" value="1040" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -45,6 +60,17 @@
             <path>
               <item name="searchFile" type="b2602c69:ProjectViewProjectNode" />
               <item name="searchFile" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="searchFile" type="b2602c69:ProjectViewProjectNode" />
+              <item name="searchFile" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="searchFile" type="b2602c69:ProjectViewProjectNode" />
+              <item name="searchFile" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="fileSearch" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -126,10 +152,19 @@
       <option name="presentableId" value="Default" />
       <updated>1528542945061</updated>
     </task>
+    <task id="LOCAL-00001" summary="First commit">
+      <created>1528544468896</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1528544468896</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="960" height="1040" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -177,6 +212,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../searchFile/.idea/modules.xml">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../searchFile/src/com/task1/fileSearch/Runner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
