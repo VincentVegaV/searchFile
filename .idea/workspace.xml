@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7f2ef1ff-b4e0-4f24-ab13-90b7535f5f5d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../searchFile/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../searchFile/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../searchFile/src/com/task1/fileSearch/InputPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/../searchFile/src/com/task1/fileSearch/InputPath.java" afterDir="false" />
-    </list>
+    <list default="true" id="7f2ef1ff-b4e0-4f24-ab13-90b7535f5f5d" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,8 +24,8 @@
       <file leaf-file-name="InputPath.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../searchFile/src/com/task1/fileSearch/InputPath.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="68">
+              <caret line="4" column="43" lean-forward="true" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
               <folding>
                 <element signature="e#81#82#0" expanded="true" />
                 <element signature="e#102#103#0" expanded="true" />
@@ -205,12 +202,18 @@
       <option name="project" value="LOCAL" />
       <updated>1528545748110</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Class 'Message' updates.">
+      <created>1528548255376</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1528548255376</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1268" height="1040" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -259,7 +262,8 @@
     <MESSAGE value="First commit" />
     <MESSAGE value="Class Runner was added." />
     <MESSAGE value="Simple changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Simple changes" />
+    <MESSAGE value="Class 'Message' updates." />
+    <option name="LAST_COMMIT_MESSAGE" value="Class 'Message' updates." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../searchFile/searchFile.iml">
@@ -280,8 +284,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../searchFile/src/com/task1/fileSearch/InputPath.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="68">
+          <caret line="4" column="43" lean-forward="true" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
           <folding>
             <element signature="e#81#82#0" expanded="true" />
             <element signature="e#102#103#0" expanded="true" />
