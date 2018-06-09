@@ -1,7 +1,13 @@
 package com.task1.fileSearch;
 
 public class InputPath {
-    public void message(){
-        System.out.println("Staging area");
+    private String path;
+
+    public void setPath(String p){
+        path = p;
+    }
+
+    public String getPath(){
+        return path;
     }
 }
