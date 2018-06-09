@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7f2ef1ff-b4e0-4f24-ab13-90b7535f5f5d" name="Default" comment="Class Runner was added.">
+    <list default="true" id="7f2ef1ff-b4e0-4f24-ab13-90b7535f5f5d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/../searchFile/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../searchFile/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../searchFile/src/com/task1/fileSearch/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/../searchFile/src/com/task1/fileSearch/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../searchFile/src/com/task1/fileSearch/InputPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/../searchFile/src/com/task1/fileSearch/InputPath.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,8 +15,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Runner.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Runner.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../searchFile/src/com/task1/fileSearch/Runner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InputPath.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../searchFile/src/com/task1/fileSearch/InputPath.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
               <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
@@ -48,6 +57,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/../searchFile/src/com/task1/fileSearch/Runner.java" />
+        <option value="$PROJECT_DIR$/../searchFile/src/com/task1/fileSearch/InputPath.java" />
       </list>
     </option>
   </component>
@@ -91,7 +101,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="C:/Program Files (x86)/Git" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../clone" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -177,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528544752497</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Class Runner was added.">
+      <created>1528545486644</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1528545486644</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -245,6 +262,13 @@
     <entry file="file://$PROJECT_DIR$/../searchFile/src/com/task1/fileSearch/Runner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../searchFile/src/com/task1/fileSearch/InputPath.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
           <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
         </state>
       </provider>
@@ -266,7 +290,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited />
           <splitter-proportions>
             <option name="proportions">
               <list>
