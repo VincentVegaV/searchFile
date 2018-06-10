@@ -1,17 +1,16 @@
 package com.task1.fileSearch;
-
+import java.lang.String;
 import java.util.Scanner;
 
-public class InputPath {
-    private Scanner path;
+class InputPath {
+    private String path;
 
-    Scanner inputString = new Scanner(System.in);
 
-    public void setInputString(Scanner inputString) {
-        this.inputString = inputString;
+    void setPath(String p) {
+            path = p;
     }
 
-    public Scanner getInputString() {
-        return inputString;
+    String getPath() {
+        return path;
     }
 }
