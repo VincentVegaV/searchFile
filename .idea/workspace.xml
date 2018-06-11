@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7f2ef1ff-b4e0-4f24-ab13-90b7535f5f5d" name="Default" comment="0.006">
+    <list default="true" id="7f2ef1ff-b4e0-4f24-ab13-90b7535f5f5d" name="Default" comment="0.006 Messages.class added">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/task1/fileSearch/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task1/fileSearch/Messages.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/task1/fileSearch/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task1/fileSearch/Runner.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -14,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Runner.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Runner.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/task1/fileSearch/Runner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+            <state relative-caret-position="204">
+              <caret line="12" column="43" lean-forward="true" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -31,6 +33,19 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
               <caret line="6" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Messages.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/task1/fileSearch/Messages.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
+              <folding>
+                <element signature="e#155#156#0" expanded="true" />
+                <element signature="e#187#188#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -67,6 +82,7 @@
         <option value="$PROJECT_DIR$/src/com/task1/fileSearch/InputPath.java" />
         <option value="$PROJECT_DIR$/src/com/task1/fileSearch/Runner.java" />
         <option value="$PROJECT_DIR$/src/com/task1/fileSearch/Runner.java" />
+        <option value="$PROJECT_DIR$/src/com/task1/fileSearch/Messages.java" />
       </list>
     </option>
   </component>
@@ -249,7 +265,21 @@
       <option name="project" value="LOCAL" />
       <updated>1528557630428</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="0.006">
+      <created>1528702698949</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1528702698949</updated>
+    </task>
+    <task id="LOCAL-00010" summary="0.006 Messages.class added">
+      <created>1528702854466</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1528702854467</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -330,7 +360,8 @@
     <MESSAGE value="0.003" />
     <MESSAGE value="0.004" />
     <MESSAGE value="0.006" />
-    <option name="LAST_COMMIT_MESSAGE" value="0.006" />
+    <MESSAGE value="0.006 Messages.class added" />
+    <option name="LAST_COMMIT_MESSAGE" value="0.006 Messages.class added" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/task1/fileSearch/InputPath.java">
@@ -396,10 +427,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/task1/fileSearch/Runner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+        <state relative-caret-position="204">
+          <caret line="12" column="43" lean-forward="true" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/task1/fileSearch/Messages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#155#156#0" expanded="true" />
+            <element signature="e#187#188#0" expanded="true" />
           </folding>
         </state>
       </provider>

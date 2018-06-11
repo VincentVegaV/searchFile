@@ -8,7 +8,9 @@ public class Runner {
     public static void main(String[] args){
         InputPath inp = new InputPath();
         Scanner inputString = new Scanner(System.in);
+        Messages mes = new Messages();
 
+        mes.printMessage(mes.startMessage);
         try {
             inp.setPath(inputString.nextLine());
 
