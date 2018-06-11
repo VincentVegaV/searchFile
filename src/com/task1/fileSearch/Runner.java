@@ -12,6 +12,8 @@ public class Runner {
         try {
             inp.setPath(inputString.nextLine());
 
+            System.out.println(inp.getPath());
+
             inputString.close();
         }catch(NullPointerException e){
             //stack trace не выводит
