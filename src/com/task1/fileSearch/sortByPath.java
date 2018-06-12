@@ -1,35 +1,48 @@
 package com.task1.fileSearch;
 import java.io.File;
 import java.util.Scanner;
-import java.nio.file.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
-public class sortByPath {
+class sortByPath {
+    private int fileCount;
 
     void findFiles() {
         InputPath inp = new InputPath();
+        InputExtension ine = new InputExtension();
         Messages mes = new Messages();
         Scanner inputString = new Scanner(System.in);
 
 
+
         try {
+            //Enter path
             mes.printMessage(mes.enterPath);
             inp.setPath(inputString.nextLine());
+            //Enter extension
+            mes.printMessage(mes.enterExt);
+            ine.setExtension(inputString.nextLine());
+
+
+            //Set path
             File f = new File(inp.getPath());
+            //Set pattern extension
+            Pattern p = Pattern.compile("." + ine.getExtension());
 
-            PathMatcher matcher =
-                    FileSystems.getDefault().getPathMatcher("glob:*.{txt,class}");
+            //Save list of files from the path to File[] array
+            File[] arrayFiles = f.listFiles();
 
-            File arrayFiles[] = f.listFiles();
-
-                for (int i = 0; i <= arrayFiles.length; ++i) {
-                    if (matcher.matches(arrayFiles[i])) {
-                    System.out.println(arrayFiles[i]);
-            }
+            for (File arrayFile : arrayFiles) {
+                Matcher m = p.matcher(arrayFile.getName());
+                if (m.find()) {
+                    System.out.println(arrayFile.getName());
+                    fileCount++;
                 }
+            }
 
-                System.out.println(arrayFiles.length);
+                System.out.println("Found files: " + fileCount);
             inputString.close();
-        } catch (NullPointerException e) {
+        } catch (NullPointerException | ArrayIndexOutOfBoundsException e) {
             e.printStackTrace();
             inputString.close();
         } finally {

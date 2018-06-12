@@ -6,10 +6,14 @@ class InputPath {
 
 
     void setPath(String p) throws NullPointerException {
+        if (p != null) {
             path = p;
+        }else {
+            throw new NullPointerException();
+        }
     }
 
-    String getPath() throws NullPointerException {
+    String getPath() {
         return path;
     }
 }
