@@ -14,7 +14,6 @@ class sortByPath {
         Scanner inputString = new Scanner(System.in);
 
 
-
         try {
             //Enter path
             mes.printMessage(mes.enterPath);
@@ -26,7 +25,7 @@ class sortByPath {
 
             //Set path
             File f = new File(inp.getPath());
-            //Set pattern extension
+            //Set pattern extension (NEED TO FIX)
             Pattern p = Pattern.compile("." + ine.getExtension());
 
             //Save list of files from the path to File[] array
@@ -39,8 +38,9 @@ class sortByPath {
                     fileCount++;
                 }
             }
-
-                System.out.println("Found files: " + fileCount);
+                //Print count of files
+                mes.printMessage(mes.resultCount + fileCount);
+            //Close stream
             inputString.close();
         } catch (NullPointerException | ArrayIndexOutOfBoundsException e) {
             e.printStackTrace();
