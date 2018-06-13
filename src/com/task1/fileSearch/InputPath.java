@@ -5,7 +5,7 @@ class InputPath {
     private String path;
 
 
-    void setPath(String p) throws NullPointerException {
+    final void setPath(String p) throws NullPointerException {
         if (p != null) {
             path = p;
         }else {
@@ -13,7 +13,7 @@ class InputPath {
         }
     }
 
-    String getPath() {
+    final String getPath() {
         return path;
     }
 }

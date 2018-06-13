@@ -11,15 +11,15 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 class sortByPath {
+    InputPath inp = new InputPath();
+    InputExtension ine = new InputExtension();
+    Messages mes = new Messages();
+    Scanner inputString = new Scanner(System.in);
+
     private int fileCount;
-    private boolean isDir = false;
+
 
     void findFiles() {
-        InputPath inp = new InputPath();
-        InputExtension ine = new InputExtension();
-        Messages mes = new Messages();
-        Scanner inputString = new Scanner(System.in);
-
 
         try {
             //Enter path
@@ -29,11 +29,12 @@ class sortByPath {
             mes.printMessage(mes.enterExt);
             ine.setExtension(inputString.nextLine());
 
+            String patternString = "." + "\\." + ine.getExtension() + "$";
 
             //Set path
             File f = new File(inp.getPath());
             //Set pattern extension ("." - any char, "$" - end of the line, "\\." - shielding of ".")
-            Pattern p = Pattern.compile("." + "\\." + ine.getExtension() + "$");
+            Pattern p = Pattern.compile(patternString);
 
             //Save list of files from the path to File[] array
             File[] arrayFiles = f.listFiles();

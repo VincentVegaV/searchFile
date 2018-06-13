@@ -4,7 +4,7 @@ class InputExtension {
     private String extension;
 
 
-    void setExtension(String p) throws NullPointerException {
+    final void setExtension(String p) throws NullPointerException {
         if (p != null) {
             extension = p;
         }else {
@@ -12,7 +12,7 @@ class InputExtension {
         }
     }
 
-    String getExtension() {
+    final String getExtension() {
         return extension;
     }
 }
