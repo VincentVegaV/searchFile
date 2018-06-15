@@ -2,10 +2,10 @@ package com.task1.fileSearch;
 import java.lang.String;
 
 class InputPath {
-    private String path;
+    private static String path;
 
 
-    final void setPath(String p) throws NullPointerException {
+    static void setPath(String p) throws NullPointerException {
         if (p != null) {
             path = p;
         }else {
@@ -13,7 +13,7 @@ class InputPath {
         }
     }
 
-    final String getPath() {
+    static String getPath() {
         return path;
     }
 }

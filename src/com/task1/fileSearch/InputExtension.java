@@ -1,10 +1,10 @@
 package com.task1.fileSearch;
 
 class InputExtension {
-    private String extension;
+    private static String extension;
 
 
-    final void setExtension(String p) throws NullPointerException {
+    static void setExtension(String p) throws NullPointerException {
         if (p != null) {
             extension = p;
         }else {
@@ -12,7 +12,7 @@ class InputExtension {
         }
     }
 
-    final String getExtension() {
+    static String getExtension() {
         return extension;
     }
 }

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7f2ef1ff-b4e0-4f24-ab13-90b7535f5f5d" name="Default" comment="0.02.1 Minor changes">
+    <list default="true" id="7f2ef1ff-b4e0-4f24-ab13-90b7535f5f5d" name="Default" comment="0.02.2 Notes:&#10;Several methods changed to static&#10;Minor changes in sortByPath class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/task1/fileSearch/InputExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task1/fileSearch/InputExtension.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/task1/fileSearch/InputPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task1/fileSearch/InputPath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/task1/fileSearch/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task1/fileSearch/Messages.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/task1/fileSearch/sortByPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task1/fileSearch/sortByPath.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -26,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sortByPath.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sortByPath.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/task1/fileSearch/sortByPath.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            <state relative-caret-position="738">
+              <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -42,16 +43,20 @@
         <entry file="file://$PROJECT_DIR$/src/com/task1/fileSearch/InputExtension.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+              <folding>
+                <element signature="e#317#318#0" expanded="true" />
+                <element signature="e#349#350#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InputPath.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="InputPath.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/task1/fileSearch/InputPath.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+              <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -60,7 +65,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/task1/fileSearch/Messages.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
-              <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+              <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -95,11 +100,11 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/task1/fileSearch/Runner.java" />
         <option value="$PROJECT_DIR$/src/com/task1/fileSearch/Runner.java" />
-        <option value="$PROJECT_DIR$/src/com/task1/fileSearch/InputPath.java" />
-        <option value="$PROJECT_DIR$/src/com/task1/fileSearch/InputPath.java" />
+        <option value="$PROJECT_DIR$/src/com/task1/fileSearch/sortByPath.java" />
         <option value="$PROJECT_DIR$/src/com/task1/fileSearch/Messages.java" />
         <option value="$PROJECT_DIR$/src/com/task1/fileSearch/InputExtension.java" />
-        <option value="$PROJECT_DIR$/src/com/task1/fileSearch/sortByPath.java" />
+        <option value="$PROJECT_DIR$/src/com/task1/fileSearch/InputPath.java" />
+        <option value="$PROJECT_DIR$/src/com/task1/fileSearch/InputPath.java" />
       </list>
     </option>
   </component>
@@ -115,6 +120,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -137,9 +145,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -304,7 +309,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528837911816</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="0.02.1 Minor changes">
+      <created>1528924923698</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1528924923699</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -313,24 +325,24 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Messages" order="7" visible="true" weight="0.32591414" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info active="true" anchor="bottom" id="Messages" order="9" visible="true" weight="0.32591414" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32258064" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3243243" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3227345" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32258064" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="2" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Designer" order="3" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1830161" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -371,7 +383,8 @@
     <MESSAGE value="0.009 Added:&#10;Search by extension" />
     <MESSAGE value="0.02 Added:&#10;&#10;Creation date&#10;Bug fixes&#10;Colored output&#10;Directories were excluded from search results" />
     <MESSAGE value="0.02.1 Minor changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="0.02.1 Minor changes" />
+    <MESSAGE value="0.02.2 Notes:&#10;Several methods changed to static&#10;Minor changes in sortByPath class" />
+    <option name="LAST_COMMIT_MESSAGE" value="0.02.2 Notes:&#10;Several methods changed to static&#10;Minor changes in sortByPath class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -656,6 +669,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/task1/fileSearch/sortByPath.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/task1/fileSearch/Runner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -666,31 +689,25 @@
     <entry file="file://$PROJECT_DIR$/src/com/task1/fileSearch/Messages.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/task1/fileSearch/InputPath.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/task1/fileSearch/InputExtension.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+          <folding>
+            <element signature="e#317#318#0" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/task1/fileSearch/sortByPath.java">
+    <entry file="file://$PROJECT_DIR$/src/com/task1/fileSearch/InputPath.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
         </state>
       </provider>
     </entry>

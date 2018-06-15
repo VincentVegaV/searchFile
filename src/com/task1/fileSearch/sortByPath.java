@@ -11,9 +11,9 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 class sortByPath {
-    InputPath inp = new InputPath();
-    InputExtension ine = new InputExtension();
-    Messages mes = new Messages();
+    //InputPath inp = new InputPath();
+    //InputExtension ine = new InputExtension();
+    //Messages mes = new Messages();
     Scanner inputString = new Scanner(System.in);
 
     private int fileCount;
@@ -23,16 +23,17 @@ class sortByPath {
 
         try {
             //Enter path
-            mes.printMessage(mes.enterPath);
-            inp.setPath(inputString.nextLine());
+            Messages.printMessage(Messages.enterPath);
+            InputPath.setPath(inputString.nextLine());
             //Enter extension
-            mes.printMessage(mes.enterExt);
-            ine.setExtension(inputString.nextLine());
+            Messages.printMessage(Messages.enterExt);
+            //ine.setExtension(inputString.nextLine());
+            InputExtension.setExtension(inputString.nextLine());
 
-            String patternString = "." + "\\." + ine.getExtension() + "$";
+            String patternString = "." + "\\." + InputExtension.getExtension() + "$";
 
             //Set path
-            File f = new File(inp.getPath());
+            File f = new File(InputPath.getPath());
             //Set pattern extension ("." - any char, "$" - end of the line, "\\." - shielding of ".")
             Pattern p = Pattern.compile(patternString);
 
@@ -44,13 +45,13 @@ class sortByPath {
                 if (m.find() && !arrayFile.isDirectory()) {
                     Path pa = Paths.get(arrayFile.getPath());
                     BasicFileAttributes attr = Files.readAttributes(pa, BasicFileAttributes.class);
-                    mes.printMessage(arrayFile.getName() + " " + mes.creationTime + attr.creationTime().toInstant().atZone(ZoneId.systemDefault()));
+                    Messages.printMessage(arrayFile.getName() + " " + Messages.creationTime + attr.creationTime().toInstant().atZone(ZoneId.systemDefault()));
 
                     fileCount++;
                 }
             }
                 //Print count of files
-                mes.printMessage(mes.resultCount + fileCount);
+                Messages.printMessage(Messages.resultCount + fileCount);
                 //Close stream
                 inputString.close();
         } catch (NullPointerException | ArrayIndexOutOfBoundsException | IOException e) {
