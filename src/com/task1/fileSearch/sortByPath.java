@@ -39,13 +39,17 @@ class sortByPath {
 
             //Save list of files from the path to File[] array
             File[] arrayFiles = f.listFiles();
+            BasicFileAttributes[] DateArray;
 
-            for (File arrayFile : arrayFiles) {
-                Matcher m = p.matcher(arrayFile.getName());
-                if (m.find() && !arrayFile.isDirectory()) {
-                    Path pa = Paths.get(arrayFile.getPath());
+            for (int i=0; i < arrayFiles.length; ++i) {
+                Matcher m = p.matcher(arrayFiles[i].getName());
+                if (m.find() && !arrayFiles[i].isDirectory()) {
+                    Path pa = Paths.get(arrayFiles[i].getPath());
                     BasicFileAttributes attr = Files.readAttributes(pa, BasicFileAttributes.class);
-                    Messages.printMessage(arrayFile.getName() + " " + Messages.creationTime + attr.creationTime().toInstant().atZone(ZoneId.systemDefault()));
+                    Messages.printMessage(arrayFiles[i].getName() + " " + Messages.creationTime + attr.creationTime().toInstant().atZone(ZoneId.systemDefault()));
+
+                    //добавить даты в массив (исправить)
+                    DateArray[i] = attr.creationTime().toInstant().atZone(ZoneId.systemDefault());
 
                     fileCount++;
                 }
