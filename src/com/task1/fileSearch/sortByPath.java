@@ -32,7 +32,8 @@ class sortByPath {
             //ine.setExtension(inputString.nextLine());
             InputExtension.setExtension(inputString.nextLine());
 
-            String patternString = "." + "\\." + InputExtension.getExtension() + "$";
+            final String patternString;
+            patternString = "." + "\\." + InputExtension.getExtension() + "$";
 
             //Set path
             File f = new File(InputPath.getPath());
@@ -61,8 +62,9 @@ class sortByPath {
                 //Print count of files
                 Messages.printMessage(Messages.resultCount + fileCount);
                 //Messages.printMessage(foundNames.toString());
-                Messages.printMessage(foundDates.toString());
+                //Messages.printMessage(foundDates.toString());
 
+                System.out.println(SortByName.sortNames(foundDates, foundNames));
                 System.out.println(SortByDate.sortDates(foundDates).toInstant().atZone(ZoneId.systemDefault()));
 
                 //Close stream
