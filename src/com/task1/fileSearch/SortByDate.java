@@ -1,4 +1,5 @@
 package com.task1.fileSearch;
+import java.io.File;
 import java.nio.file.attribute.FileTime;
 import java.util.ArrayList;
 
@@ -16,6 +17,12 @@ public class SortByDate {
             }
         }
         return recentFile;
+    }
+
+    static FileTime sortDate(ArrayList<FileTime> dates){
+        ArrayList<FileTime> sortedArray = new ArrayList<>();
+
+        return sortedArray;
     }
 
 }
