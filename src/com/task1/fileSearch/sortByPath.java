@@ -67,6 +67,12 @@ class sortByPath {
                 System.out.println(SortByName.getNewestFileName(foundDates, foundNames));
                 System.out.println(SortByDate.getNewestFileDate(foundDates).toInstant().atZone(ZoneId.systemDefault()));
 
+
+                //Разобрать все это на отдельные методы
+                Long t = SortByDate.getNewestFileDate(foundDates).toMillis()-10000;
+
+                System.out.println(FileTime.fromMillis(t).toInstant().atZone(ZoneId.systemDefault()));
+
                 //Close stream
                 inputString.close();
         } catch (NullPointerException | ArrayIndexOutOfBoundsException | IOException e) {

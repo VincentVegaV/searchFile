@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7f2ef1ff-b4e0-4f24-ab13-90b7535f5f5d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/task1/fileSearch/SortByDate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task1/fileSearch/SortByDate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/task1/fileSearch/SortByName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task1/fileSearch/SortByName.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/task1/fileSearch/sortByPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task1/fileSearch/sortByPath.java" afterDir="false" />
     </list>
@@ -17,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="sortByPath.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="sortByPath.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/task1/fileSearch/sortByPath.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="66" column="63" selection-start-line="66" selection-start-column="63" selection-end-line="66" selection-end-column="63" />
+            <state relative-caret-position="430">
+              <caret line="70" column="55" selection-start-line="70" selection-start-column="55" selection-end-line="70" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -32,8 +31,8 @@
       <file leaf-file-name="SortByDate.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/task1/fileSearch/SortByDate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            <state relative-caret-position="289">
+              <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SortByName.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SortByName.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/task1/fileSearch/SortByName.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="28" column="8" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+            <state relative-caret-position="510">
+              <caret line="33" column="2" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="2" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -88,14 +87,14 @@
         <option value="$PROJECT_DIR$/src/com/task1/fileSearch/InputPath.java" />
         <option value="$PROJECT_DIR$/src/com/task1/fileSearch/InputPath.java" />
         <option value="$PROJECT_DIR$/src/SortByName.java" />
+        <option value="$PROJECT_DIR$/src/com/task1/fileSearch/SortByName.java" />
         <option value="$PROJECT_DIR$/src/com/task1/fileSearch/SortByDate.java" />
         <option value="$PROJECT_DIR$/src/com/task1/fileSearch/sortByPath.java" />
-        <option value="$PROJECT_DIR$/src/com/task1/fileSearch/SortByName.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="53" />
+    <option name="x" value="170" />
     <option name="y" value="-8" />
     <option name="width" value="1400" />
     <option name="height" value="897" />
@@ -330,7 +329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1529522631208</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="0.02.6&#10;Added:&#10;getListFileName method&#10;name changes">
+      <created>1529675336915</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1529675336915</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -420,7 +426,8 @@
     <MESSAGE value="0.02.3" />
     <MESSAGE value="0.02.4" />
     <MESSAGE value="0.02.5&#10;Added:&#10;sortByDate logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="0.02.5&#10;Added:&#10;sortByDate logic" />
+    <MESSAGE value="0.02.6&#10;Added:&#10;getListFileName method&#10;name changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="0.02.6&#10;Added:&#10;getListFileName method&#10;name changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -713,10 +720,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/task1/fileSearch/sortByPath.java">
+    <entry file="file://$PROJECT_DIR$/src/com/task1/fileSearch/SortByName.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="66" column="63" selection-start-line="66" selection-start-column="63" selection-end-line="66" selection-end-column="63" />
+        <state relative-caret-position="510">
+          <caret line="33" column="2" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="2" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -725,18 +732,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/task1/fileSearch/SortByDate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        <state relative-caret-position="289">
+          <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/task1/fileSearch/SortByName.java">
+    <entry file="file://$PROJECT_DIR$/src/com/task1/fileSearch/sortByPath.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="28" column="8" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+        <state relative-caret-position="430">
+          <caret line="70" column="55" selection-start-line="70" selection-start-column="55" selection-end-line="70" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

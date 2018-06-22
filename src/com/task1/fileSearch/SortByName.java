@@ -22,15 +22,16 @@ public class SortByName {
         return name;
     }
 
-
+/*
     static ArrayList<FileTime> getListFileName(FileTime recentFile, ArrayList<FileTime> dates, ArrayList<String> nameFile){
-        ArrayList<FileTime> fileList;
+        ArrayList<String> namesList;
+        ArrayList<FileTime> datesList;
 
 
 
         return fileList;
     }
-
+*/
 
 
 }
