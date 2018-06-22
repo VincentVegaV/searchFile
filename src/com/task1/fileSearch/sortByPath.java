@@ -64,8 +64,8 @@ class sortByPath {
                 //Messages.printMessage(foundNames.toString());
                 //Messages.printMessage(foundDates.toString());
 
-                System.out.println(SortByName.sortNames(foundDates, foundNames));
-                System.out.println(SortByDate.sortDates(foundDates).toInstant().atZone(ZoneId.systemDefault()));
+                System.out.println(SortByName.getNewestFileName(foundDates, foundNames));
+                System.out.println(SortByDate.getNewestFileDate(foundDates).toInstant().atZone(ZoneId.systemDefault()));
 
                 //Close stream
                 inputString.close();

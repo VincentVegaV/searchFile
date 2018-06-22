@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class SortByDate {
 
-    static FileTime sortDates(ArrayList<FileTime> dates){
+    static FileTime getNewestFileDate(ArrayList<FileTime> dates){
         FileTime recentFile = dates.get(0);
         for(int i=0; i < dates.size(); i++){
             if(recentFile.compareTo(dates.get(i)) > 0){

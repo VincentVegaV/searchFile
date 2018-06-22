@@ -3,7 +3,9 @@ import java.nio.file.attribute.FileTime;
 import java.util.ArrayList;
 
 public class SortByName {
-    static String sortNames(ArrayList<FileTime> dates, ArrayList<String> nameFile){
+
+
+    static String getNewestFileName(ArrayList<FileTime> dates, ArrayList<String> nameFile){
         FileTime recentFile = dates.get(0);
         String name = nameFile.get(0);
         for(int i=0; i < dates.size(); i++){
@@ -19,4 +21,18 @@ public class SortByName {
         }
         return name;
     }
+
+
+    static ArrayList<FileTime> getListFileName(FileTime recentFile, ArrayList<FileTime> dates, ArrayList<String> nameFile){
+        ArrayList<FileTime> fileList;
+
+
+
+        return fileList;
+    }
+
+
+
 }
+
+
