@@ -11,7 +11,6 @@ class Messages {
 
 
         static String printMessage(String m){
-            System.out.println(m);
             return m;
         }
 }

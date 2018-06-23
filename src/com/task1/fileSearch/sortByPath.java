@@ -13,22 +13,17 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 class sortByPath {
-    //InputPath inp = new InputPath();
-    //InputExtension ine = new InputExtension();
-    //Messages mes = new Messages();
-    Scanner inputString = new Scanner(System.in);
-
     private int fileCount;
-
+    Scanner inputString = new Scanner(System.in);
 
     void findFiles() {
 
         try {
             //Enter path
-            Messages.printMessage(Messages.enterPath);
+            System.out.println(Messages.enterPath);
             InputPath.setPath(inputString.nextLine());
             //Enter extension
-            Messages.printMessage(Messages.enterExt);
+            System.out.println(Messages.enterExt);
             //ine.setExtension(inputString.nextLine());
             InputExtension.setExtension(inputString.nextLine());
 
@@ -46,34 +41,33 @@ class sortByPath {
             ArrayList<FileTime> foundDates = new ArrayList<>();
             ArrayList<String> foundNames = new ArrayList<>();
 
-            for (int i=0; i < arrayFiles.length; ++i) {
-                Matcher m = p.matcher(arrayFiles[i].getName());
-                if (m.find() && !arrayFiles[i].isDirectory()) {
-                    Path pa = Paths.get(arrayFiles[i].getPath());
+            for (File arrayFile : arrayFiles) {
+                Matcher m = p.matcher(arrayFile.getName());
+                if (m.find() && !arrayFile.isDirectory()) {
+                    Path pa = Paths.get(arrayFile.getPath());
                     BasicFileAttributes attr = Files.readAttributes(pa, BasicFileAttributes.class);
                     //Messages.printMessage(arrayFiles[i].getName() + " " + Messages.creationTime + attr.creationTime().toInstant().atZone(ZoneId.systemDefault()));
 
                     foundDates.add(attr.creationTime());
-                    foundNames.add(arrayFiles[i].getName());
+                    foundNames.add(arrayFile.getName());
 
                     fileCount++;
                 }
             }
                 //Print count of files
-                Messages.printMessage(Messages.resultCount + fileCount);
-                //Messages.printMessage(foundNames.toString());
-                //Messages.printMessage(foundDates.toString());
+                System.out.println(Messages.resultCount + fileCount);
 
                 System.out.println(SortByName.getNewestFileName(foundDates, foundNames));
                 System.out.println(SortByDate.getNewestFileDate(foundDates).toInstant().atZone(ZoneId.systemDefault()));
 
 
-                //Разобрать все это на отдельные методы
-                Long t = SortByDate.getNewestFileDate(foundDates).toMillis()-10000;
+                //prints each fileName in new line (non-sorted)
+            for (String s1 : SortByName.getListFileName(SortByDate.getNewestFileDate(foundDates), foundDates, foundNames)) {
+                System.out.println(s1);
+            }
 
-                System.out.println(FileTime.fromMillis(t).toInstant().atZone(ZoneId.systemDefault()));
 
-                //Close stream
+            //Close stream
                 inputString.close();
         } catch (NullPointerException | ArrayIndexOutOfBoundsException | IOException e) {
             e.printStackTrace();

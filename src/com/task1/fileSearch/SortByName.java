@@ -10,8 +10,7 @@ public class SortByName {
         String name = nameFile.get(0);
         for(int i=0; i < dates.size(); i++){
             if(recentFile.compareTo(dates.get(i)) > 0){
-                recentFile = recentFile;
-                name = name;
+                continue;
             }else{
                 if(recentFile.compareTo(dates.get(i)) < 0){
                     recentFile = dates.get(i);
@@ -22,17 +21,30 @@ public class SortByName {
         return name;
     }
 
-/*
-    static ArrayList<FileTime> getListFileName(FileTime recentFile, ArrayList<FileTime> dates, ArrayList<String> nameFile){
-        ArrayList<String> namesList;
-        ArrayList<FileTime> datesList;
-
-
-
-
-        return fileList;
+    static Long minusMillis(long mil){
+        long diff = 10000;
+        mil = mil - diff;
+        return mil;
     }
-*/
+
+
+    static ArrayList<String> getListFileName(FileTime recentFile, ArrayList<FileTime> dates, ArrayList<String> nameFile){
+        ArrayList<String> namesList = new ArrayList<>();
+        ArrayList<FileTime> dateList = new ArrayList<>();
+        long file = recentFile.toMillis();
+
+        for (int i=0; i < dates.size(); i++){
+
+            if(dates.get(i).toMillis() > minusMillis(file) && dates.get(i).toMillis() < file){
+                namesList.add(nameFile.get(i));
+                dateList.add(dates.get(i));
+            }
+        }
+        return namesList;
+    }
+
+    //Написать метод на сортировку по дате (входное значение - namesList из метода getListFileName)
+
 
 
 }
