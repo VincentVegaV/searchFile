@@ -12,6 +12,9 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import static com.task1.fileSearch.Messages.ANSI_RED;
+import static com.task1.fileSearch.Messages.ANSI_RESET;
+
 class sortByPath {
     private int fileCount;
     Scanner inputString = new Scanner(System.in);
@@ -65,7 +68,6 @@ class sortByPath {
             for (String s1 : SortByName.getListFileName(SortByDate.getNewestFileDate(foundDates), foundDates, foundNames)) {
                 System.out.println(s1);
             }
-
 
             //Close stream
                 inputString.close();
