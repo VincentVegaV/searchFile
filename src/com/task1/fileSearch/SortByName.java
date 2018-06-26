@@ -1,6 +1,8 @@
 package com.task1.fileSearch;
+import java.io.File;
 import java.nio.file.attribute.FileTime;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 
 public class SortByName {
@@ -43,12 +45,21 @@ public class SortByName {
         return namesList;
     }
 
-    //Написать метод на сортировку по дате (входное значение - namesList из метода getListFileName)
-    static ArrayList<String> sortByDate(ArrayList<String> dates){
+    static ArrayList<String> sortByName(ArrayList<String> names, ArrayList<FileTime> dates){
 
-        
+        String temp;
 
-        return dates;
+        for (int i = 0; i < dates.size() - 1; i++) {
+            for (int j = i + 1; j < dates.size(); j++) {
+                if (dates.get(i).toMillis() > dates.get(j).toMillis()) {
+                    temp = names.get(j);
+                    names.add(j, names.get(i));
+                    names.add(i, temp);
+                }
+            }
+        }
+
+        return names;
     }
 
 

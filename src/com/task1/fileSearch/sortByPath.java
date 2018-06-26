@@ -14,6 +14,8 @@ import java.util.regex.Pattern;
 
 import static com.task1.fileSearch.Messages.ANSI_RED;
 import static com.task1.fileSearch.Messages.ANSI_RESET;
+import static com.task1.fileSearch.SortByDate.*;
+import static com.task1.fileSearch.SortByName.*;
 
 class sortByPath {
     private int fileCount;
@@ -61,13 +63,19 @@ class sortByPath {
                 System.out.println(Messages.resultCount + fileCount);
 
                 System.out.println(SortByName.getNewestFileName(foundDates, foundNames));
-                System.out.println(SortByDate.getNewestFileDate(foundDates).toInstant().atZone(ZoneId.systemDefault()));
+                System.out.println(getNewestFileDate(foundDates).toInstant().atZone(ZoneId.systemDefault()));
 
 
-                //prints each fileName in new line (non-sorted)
-            for (String s1 : SortByName.getListFileName(SortByDate.getNewestFileDate(foundDates), foundDates, foundNames)) {
-                System.out.println(s1);
-            }
+
+                //Выводит список имен, которые были созданы в течение 10 сек после свежего файла. Отсортировано по возрастанию.
+                //СДЕЛАТЬ СОРТИРОВКУ ПО УБЫВАНИЮ (в SortByName -> sortByName)
+                //СОЗДАТЬ МЕТОД, КОТОРЫЙ БУДЕТ ОПРЕДЕЛЯТЬ, СКОЛЬКО ИМЕН НУЖНО ЗАПИСАТЬ В МАССИВ (9)
+                //СДЕЛАТЬ ВЫВОД ЗНАЧЕНИЙ ИЗ ARRAYLIST С НОВОЙ СТРОКИ
+                System.out.println(sortByName(getListFileName(getNewestFileDate(foundDates), foundDates, foundNames), getListFileDate(getNewestFileDate(foundDates), foundDates, foundNames)));
+
+
+
+
 
             //Close stream
                 inputString.close();
