@@ -11,9 +11,6 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import static com.task1.fileSearch.Messages.ANSI_RED;
-import static com.task1.fileSearch.Messages.ANSI_RESET;
 import static com.task1.fileSearch.SortByDate.*;
 import static com.task1.fileSearch.SortByName.*;
 

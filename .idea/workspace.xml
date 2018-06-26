@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7f2ef1ff-b4e0-4f24-ab13-90b7535f5f5d" name="Default" comment="0.03&#10;Added:&#10;display files with 'CreationDate' within 10 sec">
+    <list default="true" id="7f2ef1ff-b4e0-4f24-ab13-90b7535f5f5d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/task1/fileSearch/SortByDate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task1/fileSearch/SortByDate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/task1/fileSearch/SortByName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task1/fileSearch/SortByName.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/task1/fileSearch/sortByPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/task1/fileSearch/sortByPath.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,11 +18,8 @@
       <file leaf-file-name="sortByPath.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/task1/fileSearch/sortByPath.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="70" column="76" selection-start-line="70" selection-start-column="76" selection-end-line="70" selection-end-column="76" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-714">
+              <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -339,7 +334,14 @@
       <option name="project" value="LOCAL" />
       <updated>1529675336915</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="0.04&#10;&#10;Added:&#10;Sorting by FileName">
+      <created>1530044519433</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1530044519433</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -412,7 +414,8 @@
     <MESSAGE value="0.02.5&#10;Added:&#10;sortByDate logic" />
     <MESSAGE value="0.02.6&#10;Added:&#10;getListFileName method&#10;name changes" />
     <MESSAGE value="0.03&#10;Added:&#10;display files with 'CreationDate' within 10 sec" />
-    <option name="LAST_COMMIT_MESSAGE" value="0.03&#10;Added:&#10;display files with 'CreationDate' within 10 sec" />
+    <MESSAGE value="0.04&#10;&#10;Added:&#10;Sorting by FileName" />
+    <option name="LAST_COMMIT_MESSAGE" value="0.04&#10;&#10;Added:&#10;Sorting by FileName" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -461,9 +464,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="25" column="54" lean-forward="true" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -727,11 +727,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/task1/fileSearch/sortByPath.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="70" column="76" selection-start-line="70" selection-start-column="76" selection-end-line="70" selection-end-column="76" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-714">
+          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
         </state>
       </provider>
     </entry>
