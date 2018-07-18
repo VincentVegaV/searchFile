@@ -59,20 +59,26 @@ class sortByPath {
                 //Print count of files
                 System.out.println(Messages.resultCount + fileCount);
 
-                System.out.println(SortByName.getNewestFileName(foundDates, foundNames));
-                System.out.println(getNewestFileDate(foundDates).toInstant().atZone(ZoneId.systemDefault()));
+                System.out.println(Messages.newestFileName + SortByName.getNewestFileName(foundDates, foundNames));
+                System.out.println(Messages.newestFileDate + getNewestFileDate(foundDates).toInstant().atZone(ZoneId.systemDefault()));
+
+                ArrayList<String> fileName = sortByName(getListFileName(getNewestFileDate(foundDates), foundDates, foundNames), getListFileDate(getNewestFileDate(foundDates), foundDates, foundNames));
+
+                System.out.println(Messages.listFiles);
+                if(fileName.size() != 0) {
+                    for (int i = 0; i <= fileName.size() - 1; i++) {
+                        System.out.println(fileName.get((fileName.size() - 1) - i));
+                    }
+                }else{
+                    System.out.println("Not found");
+                }
 
 
-
-                //Выводит список имен, которые были созданы в течение 10 сек после свежего файла. Отсортировано по возрастанию.
-                //СДЕЛАТЬ СОРТИРОВКУ ПО УБЫВАНИЮ (в SortByName -> sortByName)
-                //СОЗДАТЬ МЕТОД, КОТОРЫЙ БУДЕТ ОПРЕДЕЛЯТЬ, СКОЛЬКО ИМЕН НУЖНО ЗАПИСАТЬ В МАССИВ (9)
-                //СДЕЛАТЬ ВЫВОД ЗНАЧЕНИЙ ИЗ ARRAYLIST С НОВОЙ СТРОКИ
-                System.out.println(sortByName(getListFileName(getNewestFileDate(foundDates), foundDates, foundNames), getListFileDate(getNewestFileDate(foundDates), foundDates, foundNames)));
-
-
-
-
+                /*
+                for (String i : fileName){
+                        System.out.println(i);
+                }
+                */
 
             //Close stream
                 inputString.close();
