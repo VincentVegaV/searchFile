@@ -73,13 +73,6 @@ class sortByPath {
                     System.out.println("Not found");
                 }
 
-
-                /*
-                for (String i : fileName){
-                        System.out.println(i);
-                }
-                */
-
             //Close stream
                 inputString.close();
         } catch (NullPointerException | ArrayIndexOutOfBoundsException | IOException e) {
