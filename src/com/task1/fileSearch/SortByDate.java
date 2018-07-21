@@ -35,19 +35,18 @@ public class SortByDate {
         return dateList;
     }
 //bubbleSort http://take.ms/Lv73Y
-    static void sortByDate(ArrayList<FileTime> dates){
+    static void sortByDate(ArrayList<FileTime> dates)
+    {
         int bubbleCount = dates.size();
 
-        for (int i=0; i < bubbleCount-1; i++){
-            for (int j=0; j < bubbleCount - i - 1; j++){
-                if (dates.get(j).toMillis() > dates.get(j+1).toMillis()){
+        for (int i=0; i < bubbleCount-1; i++)
+            for (int j=0; j < bubbleCount - i - 1; j++)
+                if (dates.get(j).toMillis() > dates.get(j+1).toMillis())
+                {
                     FileTime temp = dates.get(j);
-                    dates.add(j, dates.get(j+1));
-                    dates.add(j+1, temp);
+                    dates.add(j, dates.get(j + 1));
+                    dates.add(j + 1, temp);
                 }
-            }
-        }
-
     }
 
 
