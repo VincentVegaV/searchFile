@@ -45,19 +45,21 @@ public class SortByName {
         return namesList;
     }
 
+
+    //out-of-date (to be edited)
     static ArrayList<String> sortByName(ArrayList<String> names, ArrayList<FileTime> dates){
 
         String temp;
 
-        for (int i = 0; i < dates.size() - 1; i++) {
-            for (int j = i + 1; j < dates.size(); j++) {
-                if (dates.get(i).toMillis() > dates.get(j).toMillis()) {
-                    temp = names.get(j);
-                    names.add(j, names.get(i));
-                    names.add(i, temp);
+            for (int i = 0; i < dates.size() - 1; i++) {
+                for (int j = i + 1; j < dates.size(); j++) {
+                    if (dates.get(i).toMillis() > dates.get(j).toMillis()) {
+                        temp = names.get(j);
+                        names.add(j, names.get(i));
+                        names.add(i, temp);
+                    }
                 }
             }
-        }
 
         return names;
     }

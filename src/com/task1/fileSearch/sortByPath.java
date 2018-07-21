@@ -56,22 +56,33 @@ class sortByPath {
                     fileCount++;
                 }
             }
+
                 //Print count of files
                 System.out.println(Messages.resultCount + fileCount);
 
                 System.out.println(Messages.newestFileName + SortByName.getNewestFileName(foundDates, foundNames));
                 System.out.println(Messages.newestFileDate + getNewestFileDate(foundDates).toInstant().atZone(ZoneId.systemDefault()));
 
-                ArrayList<String> fileName = sortByName(getListFileName(getNewestFileDate(foundDates), foundDates, foundNames), getListFileDate(getNewestFileDate(foundDates), foundDates, foundNames));
+
+                /*
+                ArrayList<FileTime> fileT = getListFileDate(getNewestFileDate(foundDates), foundDates, foundNames);
+
+                for (int i = 0; i <= fileT.size()-1; i++) {
+                    System.out.println(i+1 +") " + fileT.get(i).toMillis());
+                }
+                */
+
+                ArrayList<FileTime> t;
+                t = getListFileDate(getNewestFileDate(foundDates), foundDates, foundNames);
 
                 System.out.println(Messages.listFiles);
-                if(fileName.size() != 0) {
-                    for (int i = 0; i <= fileName.size() - 1; i++) {
-                        System.out.println(fileName.get((fileName.size() - 1) - i));
-                    }
-                }else{
-                    System.out.println("Not found");
+                sortByDate(t);
+
+                int i=0;
+                for(FileTime x : t){
+                    System.out.println(++i + ") " + x);
                 }
+
 
             //Close stream
                 inputString.close();
