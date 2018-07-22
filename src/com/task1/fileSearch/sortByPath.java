@@ -79,10 +79,10 @@ class sortByPath {
                 for(FileTime i : t){
                     System.out.print(i.toMillis()+ ", ");
                 }
-
+            sortByDate(t);
 
                 int i=0;
-                for(long x : sortByDate(t)){
+                for(FileTime x : t){
                     System.out.println(++i + ") " + x);
                 }
 
