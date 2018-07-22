@@ -76,10 +76,13 @@ class sortByPath {
                 t = getListFileDate(getNewestFileDate(foundDates), foundDates, foundNames);
 
                 System.out.println(Messages.listFiles);
-                sortByDate(t);
+                for(FileTime i : t){
+                    System.out.print(i.toMillis()+ ", ");
+                }
+
 
                 int i=0;
-                for(FileTime x : t){
+                for(long x : sortByDate(t)){
                     System.out.println(++i + ") " + x);
                 }
 
