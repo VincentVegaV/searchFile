@@ -34,8 +34,8 @@ public class SortByDate {
         }
         return dateList;
     }
-//bubbleSort http://take.ms/Lv73Y
-    static void sortByDate(ArrayList<FileTime> dates)
+
+    static void sortByDate(ArrayList<FileTime> dates, ArrayList<String> names)
     {
         int bubbleCount = dates.size();
 
@@ -46,6 +46,10 @@ public class SortByDate {
                     FileTime temp = dates.get(j);
                     dates.set(j, dates.get(j + 1));
                     dates.set(j + 1, temp);
+
+                    String tempString = names.get(j);
+                    names.set(j, names.get(j + 1));
+                    names.set(j + 1, tempString);
                 }
     }
 

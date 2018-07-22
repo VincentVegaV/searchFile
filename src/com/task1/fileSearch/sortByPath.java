@@ -58,32 +58,24 @@ class sortByPath {
             }
 
                 //Print count of files
-                System.out.println(Messages.resultCount + fileCount);
+                System.out.print(Messages.resultCount + fileCount);
 
                 System.out.println(Messages.newestFileName + SortByName.getNewestFileName(foundDates, foundNames));
                 System.out.println(Messages.newestFileDate + getNewestFileDate(foundDates).toInstant().atZone(ZoneId.systemDefault()));
 
 
-                /*
-                ArrayList<FileTime> fileT = getListFileDate(getNewestFileDate(foundDates), foundDates, foundNames);
-
-                for (int i = 0; i <= fileT.size()-1; i++) {
-                    System.out.println(i+1 +") " + fileT.get(i).toMillis());
-                }
-                */
-
                 ArrayList<FileTime> t;
+                ArrayList<String> n;
                 t = getListFileDate(getNewestFileDate(foundDates), foundDates, foundNames);
+                n = getListFileName(getNewestFileDate(foundDates), foundDates, foundNames);
 
                 System.out.println(Messages.listFiles);
-                for(FileTime i : t){
-                    System.out.print(i.toMillis()+ ", ");
-                }
-            sortByDate(t);
 
-                int i=0;
-                for(FileTime x : t){
-                    System.out.println(++i + ") " + x);
+                sortByDate(t, n);
+
+                for(int i=0; i < n.size(); i++) {
+                    System.out.println(Messages.ANSI_RED + (i+1) + ") " + Messages.ANSI_RESET + n.get(n.size()-i-1));
+                    System.out.println(Messages.ANSI_BLUE + "Date: " + Messages.ANSI_RESET + t.get(t.size()-i-1).toInstant().atZone(ZoneId.systemDefault()));
                 }
 
 
