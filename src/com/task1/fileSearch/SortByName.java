@@ -1,11 +1,8 @@
 package com.task1.fileSearch;
-import java.io.File;
 import java.nio.file.attribute.FileTime;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 
-public class SortByName {
+class SortByName {
 
 
     static String getNewestFileName(ArrayList<FileTime> dates, ArrayList<String> nameFile){
@@ -13,7 +10,6 @@ public class SortByName {
         String name = nameFile.get(0);
         for(int i=0; i < dates.size(); i++){
             if(recentFile.compareTo(dates.get(i)) > 0){
-                continue;
             }else{
                 if(recentFile.compareTo(dates.get(i)) < 0){
                     recentFile = dates.get(i);
@@ -44,27 +40,6 @@ public class SortByName {
         }
         return namesList;
     }
-
-
-    //out-of-date (to be edited)
-    static ArrayList<String> sortByName(ArrayList<String> names, ArrayList<FileTime> dates){
-
-        String temp;
-
-            for (int i = 0; i < dates.size() - 1; i++) {
-                for (int j = i + 1; j < dates.size(); j++) {
-                    if (dates.get(i).toMillis() > dates.get(j).toMillis()) {
-                        temp = names.get(j);
-                        names.add(j, names.get(i));
-                        names.add(i, temp);
-                    }
-                }
-            }
-
-        return names;
-    }
-
-
 }
 
 

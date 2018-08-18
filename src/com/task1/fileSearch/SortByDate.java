@@ -4,13 +4,12 @@ import java.util.ArrayList;
 
 import static com.task1.fileSearch.SortByName.minusMillis;
 
-public class SortByDate {
+class SortByDate {
 
     static FileTime getNewestFileDate(ArrayList<FileTime> dates){
         FileTime recentFile = dates.get(0);
         for (FileTime date : dates) {
             if (recentFile.compareTo(date) > 0) {
-                continue;
             } else {
                 if (recentFile.compareTo(date) < 0) {
                     recentFile = date;

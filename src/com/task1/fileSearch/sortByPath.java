@@ -1,6 +1,5 @@
 package com.task1.fileSearch;
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -16,7 +15,7 @@ import static com.task1.fileSearch.SortByName.*;
 
 class sortByPath {
     private int fileCount;
-    Scanner inputString = new Scanner(System.in);
+    private final Scanner inputString = new Scanner(System.in);
 
     void findFiles() {
 
@@ -48,7 +47,6 @@ class sortByPath {
                 if (m.find() && !arrayFile.isDirectory()) {
                     Path pa = Paths.get(arrayFile.getPath());
                     BasicFileAttributes attr = Files.readAttributes(pa, BasicFileAttributes.class);
-                    //Messages.printMessage(arrayFiles[i].getName() + " " + Messages.creationTime + attr.creationTime().toInstant().atZone(ZoneId.systemDefault()));
 
                     foundDates.add(attr.creationTime());
                     foundNames.add(arrayFile.getName());
@@ -78,8 +76,6 @@ class sortByPath {
                     System.out.println(Messages.ANSI_BLUE + "Date: " + Messages.ANSI_RESET + t.get(t.size()-i-1).toInstant().atZone(ZoneId.systemDefault()));
                 }
 
-
-            //Close stream
                 inputString.close();
         } catch (NullPointerException | ArrayIndexOutOfBoundsException | IOException e) {
             e.printStackTrace();
