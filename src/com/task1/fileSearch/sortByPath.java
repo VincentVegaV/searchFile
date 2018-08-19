@@ -20,23 +20,21 @@ class sortByPath {
     void findFiles() {
 
         try {
-            //Enter path
+
             System.out.println(Messages.enterPath);
             InputPath.setPath(inputString.nextLine());
-            //Enter extension
+
             System.out.println(Messages.enterExt);
-            //ine.setExtension(inputString.nextLine());
+
             InputExtension.setExtension(inputString.nextLine());
 
             final String patternString;
             patternString = "." + "\\." + InputExtension.getExtension() + "$";
 
-            //Set path
             File f = new File(InputPath.getPath());
-            //Set pattern extension ("." - any char, "$" - end of the line, "\\." - shielding of ".")
+
             Pattern p = Pattern.compile(patternString);
 
-            //Save list of files from the path to File[] array
             File[] arrayFiles = f.listFiles();
 
             ArrayList<FileTime> foundDates = new ArrayList<>();
@@ -55,12 +53,10 @@ class sortByPath {
                 }
             }
 
-                //Print count of files
                 System.out.print(Messages.resultCount + fileCount);
 
                 System.out.println(Messages.newestFileName + SortByName.getNewestFileName(foundDates, foundNames));
                 System.out.println(Messages.newestFileDate + getNewestFileDate(foundDates).toInstant().atZone(ZoneId.systemDefault()));
-
 
                 ArrayList<FileTime> t;
                 ArrayList<String> n;

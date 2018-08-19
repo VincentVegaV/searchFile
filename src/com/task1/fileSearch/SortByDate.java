@@ -4,8 +4,21 @@ import java.util.ArrayList;
 
 import static com.task1.fileSearch.SortByName.minusMillis;
 
+/**
+ * "Sort by date" class contains methods that operate list of dates
+ * and return values
+ *
+ * @author a2.verbitsky
+ * @version 1.0
+ */
 class SortByDate {
 
+    /**
+     * Method compare dates one by one and returns the latest file date
+     *
+     * @param dates list of file dates from directory
+     * @return returns the latest file date
+     */
     static FileTime getNewestFileDate(ArrayList<FileTime> dates){
         FileTime recentFile = dates.get(0);
         for (FileTime date : dates) {
@@ -19,7 +32,16 @@ class SortByDate {
         return recentFile;
     }
 
-
+    /**
+     * Method select dates from array that are <b>not greater</b> than minusMillis value
+     *
+     * @see SortByName#minusMillis
+     * @see SortByDate#getNewestFileDate(ArrayList)
+     * @param recentFile the latest creation date
+     * @param dates the list of all file dates in the directory
+     * @param nameFile the list of all file names from the directory
+     * @return the list of dates that <b>not greater</b> than minusMillis value
+     */
     static ArrayList<FileTime> getListFileDate(FileTime recentFile, ArrayList<FileTime> dates, ArrayList<String> nameFile){
         ArrayList<String> namesList = new ArrayList<>();
         ArrayList<FileTime> dateList = new ArrayList<>();
@@ -34,6 +56,12 @@ class SortByDate {
         return dateList;
     }
 
+    /**
+     * Method sorts arrays by FileTime using Bubble sort
+     *
+     * @param dates the list of file dates
+     * @param names the list of file names
+     */
     static void sortByDate(ArrayList<FileTime> dates, ArrayList<String> names)
     {
         int bubbleCount = dates.size();
