@@ -13,6 +13,10 @@ import java.util.regex.Pattern;
 import static com.task1.fileSearch.SortByDate.*;
 import static com.task1.fileSearch.SortByName.*;
 
+/**
+ *
+ */
+
 class sortByPath {
     private int fileCount;
     private final Scanner inputString = new Scanner(System.in);
