@@ -14,13 +14,27 @@ import static com.task1.fileSearch.SortByDate.*;
 import static com.task1.fileSearch.SortByName.*;
 
 /**
+ * "Sort by path" class summarize functions from:
  *
+ * @see InputExtension
+ * @see InputPath
+ * @see Messages
+ * @see SortByDate
+ * @see SortByName
+ * @author a2.verbitsky
+ * @version 1.0
  */
-
 class sortByPath {
+    /**Field contains quantity of files in the directory*/
     private int fileCount;
+    /**New instance of Scanner object*/
     private final Scanner inputString = new Scanner(System.in);
 
+    /**
+     * Sets input from console (file path and extension). Adds creation file time and
+     * file name to collections. Prints the latest file name (by creation date).
+     * Prints the list of files with creation date >= 10 sec from the latest file date.
+     */
     void findFiles() {
 
         try {
